@@ -24,7 +24,7 @@ var app = {
 $( document ).bind( "mobileinit", function() { $.mobile.allowCrossDomainPages = true; });
 $(function(){
 	$.mobile.allowCrossDomainPages = true;
-	setInterval(function(){myloc()}, 10000);
+	//setInterval(function(){myloc()}, 10000);
 });
 function myloc(){
 	navigator.geolocation.getCurrentPosition(
