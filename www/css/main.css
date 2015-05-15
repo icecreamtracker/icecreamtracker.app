@@ -1,3 +1,18 @@
 *{margin: 0; padding: 0; background: fff; color: #000;}
 .alignCenter{text-align: center;} .alignLeft{text-align: left;} .alignRight{text-align: right;} .alignJustify{text-align: justify;}
 .full{width: 100%;} .half{width: 50%;} .third{width: 33.33%} .quarter{width: 25%;}
+
+/*LOGIN PAGE*/
+.login{}
+.login img{padding: 20px 0;}
+.login form input{margin: 10px 0;}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"]  {height: 40px; text-indent: 10px; border-radius: 5px; border: 1px solid #666;}
+
+.button{display: inline-block; height: 40px; color: #fff; border-radius: 5px; border: 0; outline: 0!important;}
+.button.red{background: #f26c68;}
+.button.red:active{background: #d35e5a;}
