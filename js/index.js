@@ -29,7 +29,9 @@ $(function(){
 function myloc(){
 	navigator.geolocation.getCurrentPosition(
 	function(position) {
-		$.get('https://bluejaydev.com/dev/icrecream/?lat='+position.coords.latitude+"&lng="+position.coords.longitude, function (data) {});
+		$.get('https://bluejaydev.com/dev/icrecream/?lat='+position.coords.latitude+"&lng="+position.coords.longitude, function (data) {
+			$(".data").html(data);
+		});
 	},
 	function() {
 		alert('Error getting location');
