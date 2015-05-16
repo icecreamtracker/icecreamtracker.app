@@ -21,10 +21,15 @@ var app = {
     }
 };
 
-$( document ).bind( "mobileinit", function() { $.mobile.allowCrossDomainPages = true; });
+//$( document ).bind( "mobileinit", function() { $.mobile.allowCrossDomainPages = true; });
 $(function(){
-	$.mobile.allowCrossDomainPages = true;
+	//$.mobile.allowCrossDomainPages = true;
 	//setInterval(function(){myloc()}, 10000);
+	$(".loginBtn").click(function(){
+		$.get('https://icecreamtracker.rocks', function(e) {
+			console.log(e)
+		});
+	});
 });
 function myloc(){
 	navigator.geolocation.getCurrentPosition(
