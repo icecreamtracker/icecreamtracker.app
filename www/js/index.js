@@ -69,13 +69,13 @@ function initialize() {
     zoom: 8,
     center: new google.maps.LatLng(-34.397, 150.644)
   };
-  map = new google.maps.Map(document.getElementById('map'), mapOptions);
-  marker = new google.maps.Marker({
-      position: new google.maps.LatLng(-34.397, 150.644),
-      map: map,
-      title: 'You are here',
-	   icon: "img/marker/marker.png"
-  });  
+	map = new google.maps.Map(document.getElementById('map'), mapOptions);
+		marker = new google.maps.Marker({
+		position: new google.maps.LatLng(-34.397, 150.644),
+		map: map,
+		title: 'You are here',
+		icon: "img/marker/marker.png"
+	});  
 }
 
 function updateLocation(){
